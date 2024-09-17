@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void){
+    int idade = 18;
+    printf("Esse é meu primeiro programa,meu nome é %s minha idade é %d\n", "Madally", idade);
+    
+}
+
