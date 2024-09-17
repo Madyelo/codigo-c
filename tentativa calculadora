@@ -1,25 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main(void){
+int main(void) {
     int nmr1, nmr2, op;
     
     printf("Digite 1 para somar ou 2 para subtrair: \n"); 
-    scanf("%d", &op ); 
+    scanf("%d", &op); 
     
-    printf("Digite o primeiro número : \n");
+    printf("Digite o primeiro número: \n");
     scanf("%d", &nmr1);
     
-    printf("Digite o segundo número : \n");
+    printf("Digite o segundo número: \n");
     scanf("%d", &nmr2);
     
-    if(op == 1){
-      int resultado = nmr1 + nmr2;
-        printf("O resultado da soma e: %d, resultado");
+    if (op == 1) {
+        
+        int resultado = nmr1 + nmr2;
+        printf("O resultado da soma é: %d\n", resultado);
+    } else if (op == 2) {
+        
+        int resultado = nmr1 - nmr2;
+        printf("O resultado da subtração é: %d\n", resultado);
+    } else {
+        printf("Opção inválida.\n");
     }
-    else if (op == 2){
-      int resultado = nmr1 - nmr2;
-        printf("O resultado da subtracao e: %d, resultado");
-    }
-return 0;
+
+    return 0;
 }
